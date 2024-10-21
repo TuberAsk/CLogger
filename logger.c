@@ -84,10 +84,11 @@ int main(void)
     if (file == NULL) return -1;
 
     struct Logger *logger = create_logger(DEBUG, file);
-    logger_log("Hello, World!", logger);
-    logger_log("Hello, World!", logger);
     
+    logger_log("Hello, World!", logger);
+    logger_log("Hello, World!", logger);
     clear_logger(logger);
+    
     free_logger(logger);
     return 0;
 }
